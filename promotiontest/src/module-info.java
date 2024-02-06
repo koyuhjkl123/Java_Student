@@ -13,4 +13,5 @@ module promotiontest {
 	exports com.keduits;
 	requires java.desktop;
 	requires java.sql;
+	requires java.mail;
 }

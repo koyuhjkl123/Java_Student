@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="원"/>
+		<item key="selection" value="AdminRussianRoulett"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="원"/>
-			<item value="UserItmsNmsSelect"/>
-			<item value="AdminInsert"/>
-			<item value="w"/>
-			<item value="UserSelectMrkttotamt"/>
-			<item value="UserSelectTwo"/>
-			<item value="nextLine"/>
-			<item value="nextline"/>
-			<item value="package com.keduit;"/>
-			<item value="Object"/>
-			<item value="book_period"/>
-			<item value="C"/>
-			<item value="reader.readLine();"/>
-			<item value="&apos;"/>
-			<item value="&quot;"/>
+			<item value="AdminRussianRoulett"/>
+			<item value="UserBollet"/>
+			<item value="health"/>
+			<item value="SelectUser"/>
+			<item value="AdminEmail"/>
+			<item value="UserSelectDate"/>
+			<item value="email"/>
+			<item value="AdminIsUpdate"/>
+			<item value="generateVerificationCode"/>
+			<item value="Authenticator"/>
+			<item value="create"/>
+			<item value="AdminUdate"/>
+			<item value="AdminDataApiValue"/>
+			<item value="sql_insert"/>
+			<item value="AdminDatabase"/>
 		</list>
 		<list key="replacehistory">
 			<item value="T"/>

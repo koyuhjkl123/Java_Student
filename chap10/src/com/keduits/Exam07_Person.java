@@ -27,13 +27,13 @@ public class Exam07_Person {
 	}
 	
 //	Person 객체를 포함하는 5명 타입의 persons가 있다.
-	static final ArrayList<Exam06_Person> persons = new ArrayList<>(
+	static final ArrayList<Exam07_Person> persons = new ArrayList<>(
 			Arrays.asList(
-			new Exam06_Person("황진이", 160, 45),
-			new Exam06_Person("이순신", 180, 80),
-			new Exam06_Person("김삿갓", 175, 65),
-			new Exam06_Person("홍길동", 170, 68),
-			new Exam06_Person("배장화", 155, 48)
+			new Exam07_Person("황진이", 160, 45),
+			new Exam07_Person("이순신", 180, 80),
+			new Exam07_Person("김삿갓", 175, 65),
+			new Exam07_Person("홍길동", 170, 68),
+			new Exam07_Person("배장화", 155, 48)
 			));
 
 }

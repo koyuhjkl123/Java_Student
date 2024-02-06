@@ -53,7 +53,7 @@ public class Exam05_ArrayList {
 			System.out.println("점수를 입력하세요 : ");
 			int s = sc.nextInt(); // 입력한 정수값을 s라는 변수에 대입
 
-			if (s < 0) { // 입력받은 값이 음수일 경우
+			if (s == 0) { // 입력받은 값이 음수일 경우
 				break; // 입력답은 값이 음수 라면 반복문 정지
 			} else if (s > 0) { // 입력받은 값이 정수일 경우
 				student.add(s); // 정수값만 ArrayList에 저장
@@ -66,7 +66,7 @@ public class Exam05_ArrayList {
 		student.forEach(k -> System.out.print(k.intValue() + " "));
 		System.out.println(); // 줄바꿈
 
-//		Chars 정적메서드에 subList student의 0부터 입력받은 크기만큼까지 주소에 있는 값을 가져온다.
+//		Chars 정적메서드에 subList student의 0부터 입력받은 크기만큼까지  있는 값을 가져온다.
 		Chars(student.subList(0, student.size()));
 	}
 

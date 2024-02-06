@@ -15,7 +15,7 @@ public class Exam06_PopulationTest {
 				"서울", "워싱턴", "베이징", "파리", "마드리드", "런던"));
 
 		List<Double> list_Double = new ArrayList<>(Arrays.asList(
-				973.3, 63.2, 2115.0, 224.4, 326.5, 853.9));
+				973.7, 63.2, 2115.0, 224.4, 326.5, 853.9));
 		
 //		2개의 리스트를 포함하기 위해 List(Exam06_Population)의 s1 변수를 생성
 		List<Exam06_Population> s1 = new ArrayList<>();
