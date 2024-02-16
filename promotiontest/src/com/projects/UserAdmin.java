@@ -34,9 +34,12 @@ public interface UserAdmin {
 	default public String formatPhoneNumber(String phoneNumber) {return "";};
 //	생년월일 양식 맞게 설정
 	default public String formatBirth(String birth) {return "";};
-//	player1 봇 턴 메서드
+//	유저가 게임을 시작하는 메서드
 	default public void UserBollet(String user_id) {};
+//	유저가 사용하는 턴
 	default public void UserBollets(String user_ud) {};
+//	유저가 100포인트가 되면 등급 상승을 시켜주는 메서드
+	default public void UserGradePromotion() {};
 	
 //	관리자 
 
@@ -52,8 +55,6 @@ public interface UserAdmin {
 	
 //  관리자 러시안 룰렛
 	default public void AdminRussianRoulett(String user_id) {};
-//	관리자 러시안 룰렛에 사용되는 items
-	default public String AdminItems() {return "";};
 //	총알(실탄, 공포탄) 생성
 	default public void AdminBullets(Map<String, Integer> buttles) {};
 //	총알 실탄, 공포탄 반환
@@ -64,9 +65,10 @@ public interface UserAdmin {
 	default public void AdminBotTurn(String user_id) {};
 //	봇이 공격하는 제어 메서드
 	default public void AdminBotAttack(String attacker, String target) {};
-	
-	
-	
+//	사용자가 승급한 등급을 부여
+	default public void AdminGrade(String username, String grade, int point) {};
+//	사용자 및 봇 승패
+	default public boolean AdminWinLoss(String username, int user_health, String botname, int bot_health) {return false;};
 	
 	
 }

@@ -26,7 +26,7 @@ public class UserInformation extends AdminInformation implements UserAdmin {
 		System.out.println("Jinsu의 게임에 오신것을 환영합니다.");
 		System.out.println("반드시 로그인을 하셔야 게임이 가능합니다.");
 		System.out.println("--------------------");
-		System.out.println("1. 비회원 로그인하기  2. 회원가입  3. 로그인 4. 아이디 찾기 5. 비밀번호 찾기 6. 로그인 정보 변경 7. 게임하기");
+		System.out.println("1. 비회원 로그인하기  2. 회원가입  3. 로그인 4. 아이디 찾기 5. 비밀번호 찾기 6. 로그인 정보 변경");
 
 		int number = 0;
 
@@ -50,9 +50,6 @@ public class UserInformation extends AdminInformation implements UserAdmin {
 			break;
 		case 6:
 			UserUpdateLoginInfo();
-			break;
-		case 7:
-			UserBollet(user_name);
 			break;
 		}
 	}
@@ -162,8 +159,8 @@ public class UserInformation extends AdminInformation implements UserAdmin {
 			}
 		}
 
-		sql = "insert into UserMerber(id, name, pw, email, mobile, DateBirth, Gender, Grade, reg_date, log_date, approval_status, approval_key) "
-				+ "values(?, ?, ?, ?,?,?,?,?,?,?,?,?)";
+		sql = "insert into UserMerber(id, name, pw, email, mobile, DateBirth, Gender, Grade, reg_date, log_date, approval_status, approval_key, point) "
+				+ "values(?, ?, ?, ?,?,?,?,?,?,?,?,?,?)";
 
 		try {
 			PreparedStatement pstmt = con.prepareStatement(sql);
@@ -180,6 +177,7 @@ public class UserInformation extends AdminInformation implements UserAdmin {
 			pstmt.setTimestamp(10, timestamp);
 			pstmt.setBoolean(11, isUserapproval_status());
 			pstmt.setString(12, generateRandomKey());
+			pstmt.setInt(13, getUserpoint());
 
 			int result_sum = pstmt.executeUpdate();
 
@@ -503,14 +501,14 @@ public class UserInformation extends AdminInformation implements UserAdmin {
 
 			while (user_info.next()) { // 해당 정보를 읽어와서 이름과 등급을 유저에게 공유
 				System.out.println("---------- 러시안룰렛의 게임 ----------");
-				System.out.println("1. 시작하기  2. 뒤로가기");
+				System.out.println("1. 시작하기  2. 나가기");
 				int rusian_number = sc.nextInt();
 				health.put(user_info.getString("name"), 5);
 				System.out.println("게임을 시작하겠습니다!");
-				AdminBullets(tans);
+				AdminBullets(tans); // 실탄, 공포탄 값 가져오기
 				while (true) {
 					if (rusian_number == 1) {
-						UserBollets(user_id);
+						UserBollets(user_id); // 사용자 턴
 					} else if (rusian_number == 2) {
 						break;
 					}
@@ -536,24 +534,36 @@ public class UserInformation extends AdminInformation implements UserAdmin {
 
 			ResultSet user_info = pstmt.executeQuery();
 			while (user_info.next()) {
+				user_name = user_info.getString("name");
 				System.out.println("당신 턴입니다.");
 				System.out.println("1. 상대에게 발사하기 2. 내 자신에게 발사하기");
 				int user_bullet = sc.nextInt();
 				String bulletType = AdminBulletType();
 				if (user_bullet == 1) {
-//		내가 상대방에게 발사한 경우
-					if (bulletType.equals("실탄")) { // 실탄이라면..
-						System.out.println("빵야!");
-						health.put("Bot_Bronze", health.get("Bot_Bronze") - 1); // 상대방은 체력이 1감소
-						AdminUseBullet(bulletType); // 실탄을 사용 했으니 1감소
-						System.out.println("상대 체력 : " + health.get("Bot_Bronze"));
-						continue;
-					} else if (bulletType.equals("공포탄")) { // 공포탄이라면 턴은 상대에게 넘어간다.
-						System.out.println("공포탄..을 맞추셨습니다.");
-						AdminUseBullet(bulletType);
-						System.out.println("다음 턴은 봇에게 넘어갑니다.");
-						AdminRussianRoulett(user_id); // 봇에게 턴
-						break;
+					
+					if(!(tans.get("실탄") == 0 && tans.get("공포탄") == 0)) {
+//						내가 상대방에게 발사한 경우
+						if (bulletType.equals("실탄")) { // 실탄이라면..
+							System.out.println("빵야!");
+							health.put("Bot_Bronze", health.get("Bot_Bronze") - 1); // 상대방은 체력이 1감소
+							AdminUseBullet("실탄"); // 실탄을 사용 했으니 1감소
+							System.out.println("상대 체력 : " + health.get("Bot_Bronze"));
+							
+							if(AdminWinLoss(user_name, health.get(user_name), "Bot_Bronze", health.get("Bot_Bronze"))) {
+								System.out.println(user_name + "님 께서 승리하셧습니다.");
+//								AdminGrade(user_name, );
+							}
+							continue;
+						} else if (bulletType.equals("공포탄")) { // 공포탄이라면 턴은 상대에게 넘어간다.
+							System.out.println("공포탄..을 맞추셨습니다.");
+							AdminUseBullet("공포탄"); // 공포탄을 사용 했으니 1감소
+							System.out.println("다음 턴은 봇에게 넘어갑니다.");
+							AdminRussianRoulett(user_id); // 봇에게 턴
+							break;
+						}
+					}else { // 탄이 0이라면
+						AdminBullets(tans); // 탄을 공급
+						continue; // 총알을 공급한 후 사용자에게 턴을 제공
 					}
 				} else if (user_bullet == 2) {
 //			자신에게 쏘는 경우
@@ -574,5 +584,13 @@ public class UserInformation extends AdminInformation implements UserAdmin {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	@Override
+	public void UserGradePromotion() {
+//		등급 상승을 위한 승급전
+		
+		
+		
 	}
 }

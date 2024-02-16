@@ -13,17 +13,19 @@ public class Exam08_hangmanTest {
 
 	public static void main(String[] args) throws IOException {
 
-		String fileName = "C:\\Temp\\words.txt"; // 파일 위치
+		String fileName = "D:\\Temp\\words.txt"; // 파일 위치
+		int randoms = 0; // // 랜덤으로 단어
 		Scanner in = new Scanner(System.in);
 
 		String[] String_names = { "apple", "kiwi", "melon", "grape", "cherry", "tomato", "banana", "Lemon", "Orange",
 				"Peach" };
 
+		randoms = (int) (Math.random() * String_names.length);
 		try {
 			DataOutputStream dd = new DataOutputStream(new FileOutputStream(fileName));
 			DataInputStream dt = new DataInputStream(new FileInputStream(fileName));
 
-			dd.writeUTF(String_names[(int) (Math.random() * String_names.length)]);
+			dd.writeUTF(String_names[randoms]);
 
 			String ss = dt.readUTF();
 			
@@ -44,7 +46,7 @@ public class Exam08_hangmanTest {
 //						그 위치에 내가 입력한 값을 넣는다.
 							if (ss.charAt(i) == ch) {
 								scv.setCharAt(i, ch);
-							}else if(ss == scv.toString()){
+							}else if(ss.equals(scv.toString())){
 								System.out.println("축하해요! 추측하신 모두 단어를 맞추셨습니다.");
 							}
 						}

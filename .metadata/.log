@@ -688,3 +688,1321 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jdt.core 4 969 2024-02-06 08:09:42.367
 !MESSAGE module-info.class [in <default> [in D:\tools\mysql-connector-j-8.3.0.jar]] does not exist
+!SESSION 2024-02-07 08:07:16.762 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-07 08:08:47.382
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-07 08:08:47.634
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-07 08:08:51.463
+!MESSAGE Logback config file: D:\myjava\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-07 08:08:58.404
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-07 08:08:58.404
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-07 08:09:03.807
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\keduit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 08:55:22.375
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 08:55:23.647
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:10:47.229
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:10:51.863
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:11:52.139
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:11:53.388
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:04.158
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:20.680
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:20.685
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:22.641
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:22.646
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:29.189
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:29.194
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:44.943
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:44.947
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:45.946
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:45.950
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:46.567
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:46.572
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:47.097
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:47.102
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:47.630
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:47.635
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:48.139
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:48.144
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:49.297
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 4 2024-02-07 09:12:49.302
+!MESSAGE Error while evaluating 'Map Entries' logical structure for type java.util.Map with the value 'return entrySet().toArray();'
+!STACK 0
+java.lang.IllegalStateException: The method entrySet() is undefined for the type Map___
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.log(JavaLogicalStructure.java:200)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate(JavaLogicalStructure.java:149)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(JavaLogicalStructure.java:323)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache$LogicalStructureTypeCache.getLogicalStructure(LogicalStructureCache.java:144)
+	at org.eclipse.debug.internal.ui.views.variables.LogicalStructureCache.getLogicalStructure(LogicalStructureCache.java:57)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:215)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getLogicalValue(VariableContentProvider.java:114)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getValueChildren(VariableContentProvider.java:132)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getAllChildren(VariableContentProvider.java:77)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getAllChildren(JavaVariableContentProvider.java:144)
+	at org.eclipse.debug.internal.ui.model.elements.VariableContentProvider.getChildCount(VariableContentProvider.java:48)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableContentProvider.getChildCount(JavaVariableContentProvider.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider.retrieveChildCount(ElementContentProvider.java:126)
+	at org.eclipse.debug.internal.ui.model.elements.ElementContentProvider$2.run(ElementContentProvider.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-02-08 08:06:16.674 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-08 08:07:12.392
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-08 08:07:12.653
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-08 08:07:14.580
+!MESSAGE Logback config file: D:\myjava\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-08 08:07:21.563
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-08 08:07:21.563
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-08 08:07:26.885
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\keduit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2024-02-08 08:32:13.653
+!MESSAGE A workspace crash was detected. The previous session did not exit normally. Not using saved taglib indexes.
+!SESSION 2024-02-08 17:34:39.551 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-08 17:35:26.504
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-08 17:35:26.766
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-08 17:35:27.891
+!MESSAGE Logback config file: D:\myjava\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-08 17:35:30.432
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-08 17:35:30.432
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-08 17:35:35.525
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\keduit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-02-08 17:42:31.538 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-08 17:42:33.538
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-08 17:42:33.770
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-08 17:42:34.844
+!MESSAGE Logback config file: D:\myjava\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-08 17:42:36.855
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-08 17:42:36.855
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-08 17:42:41.500
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\keduit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-02-13 08:16:01.077 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-13 08:17:06.673
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-13 08:17:06.954
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-13 08:17:09.110
+!MESSAGE Logback config file: D:\myjava\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-13 08:17:16.548
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-13 08:17:16.548
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-13 08:17:23.066
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\keduit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-02-14 16:25:26.870 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-14 16:26:21.740
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-14 16:26:22.027
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-14 16:26:23.862
+!MESSAGE Logback config file: D:\myjava\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-14 16:26:30.958
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-14 16:26:30.958
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-14 16:26:36.645
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\keduit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-02-14 20:37:19.422
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:96)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.action.ActionContributionItem.updateImages(ActionContributionItem.java:1019)
+	at org.eclipse.jface.action.ActionContributionItem.updateToolItem(ActionContributionItem.java:776)
+	at org.eclipse.jface.action.ActionContributionItem.update(ActionContributionItem.java:739)
+	at org.eclipse.jface.action.ActionContributionItem.fill(ActionContributionItem.java:350)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:358)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.DialogPackageExplorerActionGroup.createLeftToolBar(DialogPackageExplorerActionGroup.java:262)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.NewSourceContainerWorkbookPage.getControl(NewSourceContainerWorkbookPage.java:246)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.createControl(BuildPathsBlock.java:245)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.createControl(JavaCapabilityConfigurationPage.java:158)
+	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:180)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:744)
+	at org.eclipse.jface.wizard.WizardDialog.setWizard(WizardDialog.java:1186)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1239)
+	at org.eclipse.jface.wizard.WizardDialog.lambda$3(WizardDialog.java:1227)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1227)
+	at org.eclipse.ui.internal.dialogs.NewWizardSelectionPage.advanceToNextPageOrFinish(NewWizardSelectionPage.java:73)
+	at org.eclipse.ui.internal.dialogs.NewWizardNewPage.lambda$0(NewWizardNewPage.java:342)
+	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:781)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:778)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1570)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1216)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:272)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:329)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:119)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-02-14 20:37:19.427
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:96)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.action.ActionContributionItem.updateImages(ActionContributionItem.java:1016)
+	at org.eclipse.jface.action.ActionContributionItem.updateToolItem(ActionContributionItem.java:776)
+	at org.eclipse.jface.action.ActionContributionItem.update(ActionContributionItem.java:739)
+	at org.eclipse.jface.action.ActionContributionItem.fill(ActionContributionItem.java:350)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:358)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.DialogPackageExplorerActionGroup.createLeftToolBar(DialogPackageExplorerActionGroup.java:262)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.NewSourceContainerWorkbookPage.getControl(NewSourceContainerWorkbookPage.java:246)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.createControl(BuildPathsBlock.java:245)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.createControl(JavaCapabilityConfigurationPage.java:158)
+	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:180)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:744)
+	at org.eclipse.jface.wizard.WizardDialog.setWizard(WizardDialog.java:1186)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1239)
+	at org.eclipse.jface.wizard.WizardDialog.lambda$3(WizardDialog.java:1227)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1227)
+	at org.eclipse.ui.internal.dialogs.NewWizardSelectionPage.advanceToNextPageOrFinish(NewWizardSelectionPage.java:73)
+	at org.eclipse.ui.internal.dialogs.NewWizardNewPage.lambda$0(NewWizardNewPage.java:342)
+	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:781)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:778)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1570)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1216)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:272)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:329)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:119)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-02-14 20:37:19.429
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:240)
+	at org.eclipse.jface.resource.DerivedImageDescriptor.internalCreateImage(DerivedImageDescriptor.java:83)
+	at org.eclipse.jface.resource.DerivedImageDescriptor.createResource(DerivedImageDescriptor.java:51)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:96)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+	at org.eclipse.jface.action.ActionContributionItem.updateImages(ActionContributionItem.java:1016)
+	at org.eclipse.jface.action.ActionContributionItem.updateToolItem(ActionContributionItem.java:776)
+	at org.eclipse.jface.action.ActionContributionItem.update(ActionContributionItem.java:739)
+	at org.eclipse.jface.action.ActionContributionItem.fill(ActionContributionItem.java:350)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:358)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.DialogPackageExplorerActionGroup.createLeftToolBar(DialogPackageExplorerActionGroup.java:262)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.NewSourceContainerWorkbookPage.getControl(NewSourceContainerWorkbookPage.java:246)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.createControl(BuildPathsBlock.java:245)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.createControl(JavaCapabilityConfigurationPage.java:158)
+	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:180)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:744)
+	at org.eclipse.jface.wizard.WizardDialog.setWizard(WizardDialog.java:1186)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1239)
+	at org.eclipse.jface.wizard.WizardDialog.lambda$3(WizardDialog.java:1227)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1227)
+	at org.eclipse.ui.internal.dialogs.NewWizardSelectionPage.advanceToNextPageOrFinish(NewWizardSelectionPage.java:73)
+	at org.eclipse.ui.internal.dialogs.NewWizardNewPage.lambda$0(NewWizardNewPage.java:342)
+	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:781)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:778)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1570)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1216)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:272)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:329)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:119)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-02-14 20:37:19.432
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:300)
+	at org.eclipse.jface.resource.DeferredImageDescriptor.createImage(DeferredImageDescriptor.java:85)
+	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:89)
+	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:71)
+	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:92)
+	at org.eclipse.ui.actions.OpenWithMenu.getImage(OpenWithMenu.java:137)
+	at org.eclipse.ui.actions.OpenWithMenu.createMenuItem(OpenWithMenu.java:174)
+	at org.eclipse.ui.actions.OpenWithMenu.fill(OpenWithMenu.java:271)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:729)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:806)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:655)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:325)
+	at jdk.internal.reflect.GeneratedMethodAccessor27.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:294)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.reconcileManagerToModel(MenuManagerRenderer.java:1076)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.reconcileManagerToModel(MenuManagerRenderer.java:1014)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:379)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:355)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5141)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4773)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:237)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4113)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SESSION 2024-02-15 08:06:15.755 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-15 08:07:35.050
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-15 08:07:35.514
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-15 08:07:38.255
+!MESSAGE Logback config file: D:\myjava\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-15 08:07:46.298
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-15 08:07:46.298
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-15 08:07:52.126
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\keduit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-02-15 16:02:31.902 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data D:\myjava -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-15 16:03:18.379
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-15 16:03:18.724
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-15 16:03:20.056
+!MESSAGE Logback config file: D:\myjava\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-15 16:03:24.659
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-15 16:03:24.659
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-15 16:03:29.738
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\keduit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-02-15 16:03:39.092
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2024-02-15 16:59:24.955 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data D:\myjava -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-15 16:59:27.876
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-15 16:59:28.147
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-02-15 16:59:28.731
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-15 16:59:29.358
+!MESSAGE Logback config file: D:\myjava\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-15 16:59:31.390
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-15 16:59:31.390
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-15 16:59:36.151
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\keduit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-02-16 08:06:26.462 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-02-16 08:07:48.449
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-16 08:07:48.773
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-16 08:07:51.024
+!MESSAGE Logback config file: D:\myjava\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-16 08:07:59.341
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-16 08:07:59.341
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-16 08:08:05.750
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\keduit'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

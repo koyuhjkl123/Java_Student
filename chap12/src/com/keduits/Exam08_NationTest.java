@@ -11,12 +11,12 @@ import com.keduit.Type;
 public class Exam08_NationTest {
 
 	public static void main(String[] args) {
-		
+
 //		stream으로 생성
 		Stream<Nation> list = Nation.nations.stream();
 
 //		방법 1번 || Collectors.groupingBy(Nation::getType,Collectors.toMap()) 활용
-		
+//
 //		Map<Type, Map<String, String>> map = list
 ////				Collectors.groupingBy : 첫번째 매개변수로 getType으로 LAND, ISLAND 그룹화 기준
 //			    .collect(Collectors.groupingBy(
@@ -46,15 +46,15 @@ public class Exam08_NationTest {
 //			        )
 //			    ));
 //		System.out.println(map);
-		
+
 //		방법 2번 // Collectors.groupingBy(Nation::getType, Collectors.groupingBy(,Collectors.mapping) 활용
-		Map<Type, Map<String, List<String>>> map = list.collect(Collectors.groupingBy(
-				Nation::getType, Collectors.groupingBy(t->{
+		Map<Type, Map<String, List<String>>> map = list
+				.collect(Collectors.groupingBy(Nation::getType, Collectors.groupingBy(t -> {
 //					첫번째 Type : Nation::getType 기준(LAND,ISLAND)
 //					tomap :getType기준인 키값의 첫번째 키값 : 선진국, 개도국을 각 그룹화
-					if(t.getGdpRank() <= 12) {
+					if (t.getGdpRank() <= 12) {
 						return "선진국";
-					}else {
+					} else {
 						return "개도국";
 					}
 //				선진국, 개도국으로 그룹된 키값을 

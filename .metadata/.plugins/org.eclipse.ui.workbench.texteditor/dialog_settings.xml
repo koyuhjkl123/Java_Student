@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="AdminRussianRoulett"/>
+		<item key="selection" value="insertImage"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="AdminRussianRoulett"/>
+			<item value="insertImage"/>
+			<item value="AdminGrade"/>
+			<item value="tans"/>
+			<item value="entrySet"/>
+			<item value="Bot_Bronze"/>
+			<item value="AdminUseBullet"/>
+			<item value="AdminBotTurn"/>
 			<item value="UserBollet"/>
+			<item value="UserBollets"/>
+			<item value="AdminBullets"/>
+			<item value="AdminBulletType"/>
+			<item value="AdminItems"/>
+			<item value="AdminRussianRoulett"/>
 			<item value="health"/>
 			<item value="SelectUser"/>
-			<item value="AdminEmail"/>
-			<item value="UserSelectDate"/>
-			<item value="email"/>
-			<item value="AdminIsUpdate"/>
-			<item value="generateVerificationCode"/>
-			<item value="Authenticator"/>
-			<item value="create"/>
-			<item value="AdminUdate"/>
-			<item value="AdminDataApiValue"/>
-			<item value="sql_insert"/>
-			<item value="AdminDatabase"/>
 		</list>
 		<list key="replacehistory">
 			<item value="T"/>

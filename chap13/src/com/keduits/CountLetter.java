@@ -27,7 +27,7 @@ public class CountLetter {
 		}
 	}
 	
-	public int count() throws IOException {
+	public int count(){
 		String name;
 		try {
 			DataInputStream dt = new DataInputStream(new FileInputStream(fileName));
@@ -40,7 +40,7 @@ public class CountLetter {
 				}
 			}
 					
-		} catch (FileNotFoundException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

@@ -13,7 +13,8 @@ public class User extends Admin{
 	private String userDateBirth; // 생년월일
 	private String userphone; // 연락처
 	private String usergender; // 성별
-	private String usergrade; // 권한 등급
+	private String usergrade; // 등급
+	private int userpoint; // 사용자 등급 포인트
 	private boolean userapproval_status = false;
 	
 	
@@ -31,6 +32,7 @@ public class User extends Admin{
 	    }
 	}
 	enum UserGrade{ // 유저 단계별 등급
+		
 		Bronze("브론즈"), // 브론즈
 		Silver("실버"), // 실버
 		Gold("골드"), // 골드
@@ -108,6 +110,12 @@ public class User extends Admin{
 	public void setUserapproval_status(boolean userapproval_status) {
 		this.userapproval_status = userapproval_status;
 	}
+	public int getUserpoint() {
+		return userpoint;
+	}
+	public void setUserpoint(int userpoint) {
+		this.userpoint = userpoint;
+	}
 	
 	
 //	User 회원 로그인
@@ -121,14 +129,13 @@ public class User extends Admin{
 //			  DateBirth varchar(50) not null,
 //			  Gender varchar(10) not null,
 //			  Grade varchar(30) not null,
-//			  reg_date datetime not null,	
+//			  reg_date datetime not null,
 //			  log_date datetime not null,
 //			  approval_status varchar(10) not null,
-//			  approval_key varchar(10)
+//			  approval_key varchar(10),
+//            point int not null
 //			);
-	
-//	User 비회원 로그인
-	
-//	create table UserNonMember(num
+//          
+//create table UserNonMember(num int auto_increment primary key, approval_key varchar(15) not null);
 
 }

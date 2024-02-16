@@ -22,8 +22,12 @@ public class AdminInformation extends User implements UserAdmin {
 
 //	총알 실탄, 공포탄 랜덤 생성
 	Map<String, Integer> tans = new HashMap<String, Integer>();
+
 //	player1, 유저 각 기본 체력 5를 부여한다.
 	Map<String, Integer> health = new HashMap<String, Integer>();
+	
+//	승리(17 ~ 20), 패배(15 ~ 20)
+	Map<String, Integer> Victory = new HashMap<String, Integer>();
 
 	String user_name = "";
 	int count = 1;
@@ -66,10 +70,8 @@ public class AdminInformation extends User implements UserAdmin {
 				PreparedStatement pstmt_status = con.prepareStatement(sql);
 				pstmt_status.setString(1, getUserid());
 				ResultSet result_status = pstmt_status.executeQuery();
-
 				if (result_status.next()) {
 					boolean userApprovalStatus = result_status.getBoolean("approval_status");
-
 					if (userApprovalStatus) {
 						System.out.println("고객님의 계정은 이미 인증이 완료되었습니다.");
 					} else {
@@ -176,7 +178,7 @@ public class AdminInformation extends User implements UserAdmin {
 	@Override
 	public void AdminRussianRoulett(String user_id) {
 
-		String sql = "select name, Grade from UserMerber where id = ?";
+		String sql = "select name, Grade, point from UserMerber where id = ?";
 //		러시안 룰렛 게임!
 
 		try {
@@ -187,24 +189,24 @@ public class AdminInformation extends User implements UserAdmin {
 			ResultSet user_info = pstmt.executeQuery();
 
 			while (user_info.next()) { // 해당 정보를 읽어와서 이름과 등급을 유저에게 공유
-
 				user_name = user_info.getString("name");
-
-				if (tans.get("실탄") > 0 && tans.get("공포탄") > 0) {
-					AdminBotTurn(user_name); // 봇 턴
-				} else {
+//				실탄과 공포탄이 떨어질 경우 재 충전
+				if (tans.get("실탄") == 0 && tans.get("공포탄") == 0) {
 					System.out.println(count + 1);
 					System.out.println(count + 1 + "라운드로 시작하지");
-					AdminBullets(tans);
+					AdminBullets(tans); // 실탄, 공포탄 재충전
 					count++;
+				} else if(health.get(user_name) == 0){
+					System.out.println(user_name + "님께서 패배하셨습니다.");
+					Victory.put("패배", user_info.getInt("point"));
 				}
-
+				else {
+					AdminBotTurn(user_name); // 봇 턴
+				}
 			}
-
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	@Override
@@ -217,33 +219,38 @@ public class AdminInformation extends User implements UserAdmin {
 //		 	1. 공격 처리  2. 봇이 자신을 공격
 		int bot_bullet = 1 + (int) (Math.random() * 2);
 
-		if (bot_bullet == 1) {
-//			봇이 사용자에게 공격을 한 경우
-			AdminBotAttack(user_id, "Bot_Bronze");
-		} else if (bot_bullet == 2) {
-//		    	봇 자신이 총을 쏠 경우
-			if (bulletType.equals("실탄") && tans.get("실탄") > 0) {
-				System.out.println("봇이 스스로 실탄을 쐈네요!ㅋㅋ");
-				health.put("Bot_Bronze", health.get("Bot_Bronze") - 1);
-				System.out.println("봇 체력 : " + health.get("Bot_Bronze"));
-				AdminUseBullet(bulletType);
-			} else if (bulletType.equals("공포탄") && tans.get("공포탄") > 0) {
-				System.out.println("봇이 공포탄을 사용했습니다. 턴을 넘깁니다.");
-				AdminUseBullet(bulletType);
-			}
+		if(!(tans.get("실탄") == 0 && tans.get("공포탄") == 0)) {
+			if (bot_bullet == 1) {
+//				봇이 사용자에게 공격을 한 경우
+				AdminBotAttack(user_id, "Bot_Bronze");
+			} else if (bot_bullet == 2) {
+//			    	봇 자신이 총을 쏠 경우
+				if (bulletType.equals("실탄") && tans.get("실탄") > 0) {
+					System.out.println("봇이 스스로 실탄을 쐈네요!ㅋㅋ");
+					health.put("Bot_Bronze", health.get("Bot_Bronze") - 1);
+					System.out.println("봇 체력 : " + health.get("Bot_Bronze"));
+					AdminUseBullet(bulletType);
+				} else if (bulletType.equals("공포탄") && tans.get("공포탄") > 0) {
+					System.out.println("봇이 공포탄을 사용했습니다. 턴을 넘깁니다.");
+					AdminUseBullet(bulletType);
+				}else {
+					AdminBullets(tans); // 봇 턴에서 총알이 없으면 공급
+				}
 
+			}
 		}
 	}
-
 	@Override
 	public void AdminBotAttack(String target, String attacker) {
 		String bulletType = AdminBulletType();
 
 		if (bulletType.equals("실탄") && tans.get("실탄") > 0) {
+			
 			System.out.println(attacker + "가 " + target + "에게 공격 합니다.");
 			health.put(target, health.get(target) - 1); // 사용자 체력 1감소
 			AdminUseBullet(bulletType);
 			System.out.println(target + "는 공격에 맞았습니다! " + target + " 체력: " + health.get(target));
+			AdminBotTurn(target);
 		} else if (bulletType.equals("공포탄") && tans.get("공포탄") > 0) {
 			System.out.println(attacker + "가 " + target + "에게 공격을 시도합니다!");
 			System.out.println(attacker + "가 " + target + "에게 공포탄을 사용합니다. 턴을 넘깁니다.");
@@ -252,18 +259,8 @@ public class AdminInformation extends User implements UserAdmin {
 	}
 
 	@Override
-	public String AdminItems() {
-//		게임의 아이템 정보
-
-//		체력 회복, 데미지 증가, 기본 체력 5
-
-		return UserAdmin.super.AdminItems();
-	}
-
-	@Override
 	public void AdminBullets(Map<String, Integer> bb) {
-//		실탄, 공포탄 <= 10
-//		실탄 : 공포탄 --> 각 아이템의 확률은 5미만 
+//		실탄, 공포탄 <= 8
 
 		int bullet = 0; // 실탄
 		int blank = 0; // 공포탄
@@ -275,9 +272,9 @@ public class AdminInformation extends User implements UserAdmin {
 			bullet = bullet_random.nextInt(10) + 1;
 			blank = blank_random.nextInt(10) + 1;
 
-			if ((bullet + blank) <= 10) {
-				bb.put("실탄", bullet);
-				bb.put("공포탄", blank);
+			if ((bullet + blank) <= 8) {
+				bb.put("실탄", bullet); // 얻은 아이템을 Map 참조변수인 bb에 저장
+				bb.put("공포탄", blank); // 얻은 아이템을 Map 참조변수인 bb에 저장
 				System.out.print("실탄 : " + tans.get("실탄") + "\t");
 				System.out.println("공포탄 : " + tans.get("공포탄"));
 				break;
@@ -289,7 +286,7 @@ public class AdminInformation extends User implements UserAdmin {
 
 	@Override
 	public String AdminBulletType() {
-//		실탄인지 공포탄인지 확률 메서드
+//		실탄, 공포탄 각 랜덤으로 뽑은 수량에 따라 확률 실탄 및 공포탄 String타입으로 제공
 		Random random = new Random();
 		double totalbollet = tans.get("실탄") + tans.get("공포탄");
 		double bolletprobabilly = tans.get("실탄") / totalbollet;
@@ -300,7 +297,7 @@ public class AdminInformation extends User implements UserAdmin {
 
 	@Override
 	public void AdminUseBullet(String bullet) {
-
+//		실탄 및 공포탄 사용 시 감소 시켜주는 메서드
 		if (bullet.equals("실탄") && tans.get("실탄") > 0) {
 			tans.put("실탄", tans.get("실탄") - 1); // 실탄이 발사되면 1감소
 
@@ -308,6 +305,40 @@ public class AdminInformation extends User implements UserAdmin {
 			tans.put("공포탄", tans.get("공포탄") - 1);
 		}
 
+	}
+	
+	@Override
+	public void AdminGrade(String username, String grade ,int point) {
+//		사용자가 승리 시 (17p ~ 20p) 사용자가 패배 시(15p ~ 20p)
+//		DB에 있는 point가 100점 될 시 승급 기회 부여 
+		int win = 0;
+		int loss = 0;
+		
+		Random victorys = new Random();
+		// 0부터 3까지의 int값을 받고 거기에 17를 더한다.
+		win = (victorys.nextInt(4) + 17); // 승리 시
+		loss = (victorys.nextInt(6) + 15); // 패배 시
+		
+		
+		if(point == 100) {
+			System.out.println(grade +"에서 한단계 승급할 기회를 얻으셨습니다.");
+			System.out.println("승급전 3전 2승제입니다.");
+			
+			
+		}
+		
+	
+		
+	}
+	
+	@Override
+	public boolean AdminWinLoss(String username, int user_health, String botname, int bot_health) {
+		
+		if(bot_health == 0 && user_health > 0){
+			return true; // 사용자가 승리 시 true
+		}else {
+			return false; // 사용자가 패배 시 false
+		}
 	}
 
 }
